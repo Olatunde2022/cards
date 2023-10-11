@@ -1,12 +1,13 @@
 {
 "builds": [{
+    "scr": "Card_Base/wsgi.py",
     "use": "@vercel/python",
     "config": {"maxLambdaSize": "15mb","runtime": "python3.11"}
 }],
 "routes": [
     {
         "src": "/(.*)",
-        "dest": "djangoprojectname/wsgi.py"
+        "dest": "Card_Base/wsgi.py"
     }
 ] 
 }
